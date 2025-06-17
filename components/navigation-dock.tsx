@@ -1,6 +1,6 @@
 "use client";
 
-import { CalendarIcon, HomeIcon, MailIcon, PencilIcon } from "lucide-react";
+import { CalendarIcon, FileCheck2, Folders, HomeIcon, MailIcon, PencilIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -65,7 +65,7 @@ const Icons = {
 const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/projects", icon: PencilIcon, label: "Blog" },
+    { href: "/projects", icon: Folders, label: "Projects" },
   ],
   contact: {
     social: {
@@ -81,7 +81,7 @@ const DATA = {
         icon: Icons.linkedin,
         external: true,
       },
-      email: {
+      Email: {
         name: "Send Email",
         url: "mailto:vieru.alexandruu@gmail.com",
         icon: Icons.email,
