@@ -36,30 +36,24 @@ const Contact = () => {
 
       <div className="flex items-center justify-center h-full w-full">
         <div className="w-full max-w-2xl text-center space-y-10">
-          <BoxReveal boxColor="#5046e6" duration={0.6}>
-            <h2 className="ml-10 lg:ml-36 text-4xl md:text-5xl font-bold tracking-tight">
-              Let's <span className="text-[#5046e6]">have a chat</span>
-            </h2>
-          </BoxReveal>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+            Let's <span className="text-[#5046e6]">have a chat</span>
+          </h2>
 
-          <BoxReveal boxColor="#5046e6" duration={0.5}>
-            <p className="text-muted-foreground text-base sm:text-lg">
-              Whether it's a quick question or a full project proposal, I'm just
-              one message away.
-            </p>
-          </BoxReveal>
+          <p className="text-muted-foreground text-base sm:text-lg">
+            Whether it's a quick question or a full project proposal, I'm just
+            one message away.
+          </p>
 
-          <BoxReveal width="100%" boxColor="#5046e6" duration={0.5}>
-            <div className="flex justify-center w-full cursor-none">
-              <div className="w-full max-w-xl">
-                <PlaceholdersAndVanishInput
-                  placeholders={placeholders}
-                  onChange={handleChange}
-                  onSubmit={onSubmit}
-                />
-              </div>
+          <div className="flex justify-center w-full cursor-none">
+            <div className="w-full max-w-xl">
+              <PlaceholdersAndVanishInput
+                placeholders={placeholders}
+                onChange={handleChange}
+                onSubmit={onSubmit}
+              />
             </div>
-          </BoxReveal>
+          </div>
         </div>
       </div>
     </section>

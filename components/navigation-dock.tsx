@@ -64,8 +64,8 @@ const Icons = {
 
 const DATA = {
   navbar: [
-    { href: "#", icon: HomeIcon, label: "Home" },
-    { href: "#", icon: PencilIcon, label: "Blog" },
+    { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "/projects", icon: PencilIcon, label: "Blog" },
   ],
   contact: {
     social: {
@@ -93,7 +93,7 @@ const DATA = {
 
 export function NavigationDock() {
   return (
-    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-[100] cursor-none">
+    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-[100] md:cursor-none">
       <TooltipProvider>
         <Dock direction="middle">
           {DATA.navbar.map((item) => (
@@ -105,7 +105,7 @@ export function NavigationDock() {
                     aria-label={item.label}
                     className={cn(
                       buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 rounded-full cursor-none"
+                      "size-12 rounded-full md:cursor-none"
                     )}
                   >
                     <item.icon className="size-4" />
@@ -127,7 +127,7 @@ export function NavigationDock() {
                     aria-label={social.name}
                     className={cn(
                       buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 rounded-full cursor-none"
+                      "size-12 rounded-full md:cursor-none"
                     )}
                     {...(social.external && {
                       target: "_blank",
@@ -148,7 +148,7 @@ export function NavigationDock() {
           <DockIcon>
             <Tooltip>
               <TooltipTrigger asChild>
-                <ModeToggle className="rounded-full cursor-none" />
+                <ModeToggle className="rounded-full md:cursor-none" />
               </TooltipTrigger>
               <TooltipContent>
                 <p>Theme</p>

@@ -77,3 +77,26 @@ export const short = [
     video: "",
   },
 ];
+
+export const long =[
+  {
+    url: "https://www.expertphotobooth360.com/",
+    imageSrc: "/images/expert360.png"
+  },
+  {
+    url: "https://www.zenbuild.ro/",
+    imageSrc: "/images/zenbuild.png",
+  },
+  {
+    url: "https://www.centralnord.ro/",
+    imageSrc: "/images/centralnord.png",
+  },
+  {
+    url: "https://www.ubeon.ro/",
+    imageSrc: "/images/ubeon.png",
+  },
+  {
+    url: "https://www.mr-lucass.com/",
+    imageSrc: "/images/mr-lucass.png",
+  },
+]
